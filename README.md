@@ -13,7 +13,7 @@ The eEye application was born, able to preadinosticar visual diseases like Metam
 ## Team
 - Francisco Edilson Silva De Freitas - https://github.com/edilson-silva
 - Mateus de Sousa Silva - https://github.com/mateusdesousa
-- João Victor Duarte Vianna - ?
+- João Victor Duarte Vianna - https://github.com/JoaoDeMaria
 - Daniel Carvalho Anselmo - ?
 
 ## License
