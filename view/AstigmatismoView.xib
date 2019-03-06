@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AstigmatismoView" customModule="eEye" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXH-mI-egB">
+                    <rect key="frame" x="0.0" y="30" width="375" height="41"/>
+                    <string key="text">Example Question
+With multiple lines</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OkO-Au-C3a">
+                    <rect key="frame" x="0.0" y="81" width="375" height="465"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntv-91-4J2">
+                    <rect key="frame" x="0.0" y="556" width="375" height="61"/>
+                    <string key="text">Example Question
+With multiple lines
+Three Lines...</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-bi-Orb">
+                    <rect key="frame" x="112" y="625" width="150" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="dZz-W8-p7t"/>
+                        <constraint firstAttribute="width" constant="150" id="hjB-na-NPZ"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Sim"/>
+                        <segment title="Não"/>
+                    </segments>
+                    <color key="tintColor" red="0.31764705882352939" green="0.1764705882352941" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OkO-Au-C3a" firstAttribute="top" secondItem="fXH-mI-egB" secondAttribute="bottom" constant="10" id="0iB-T6-Uga"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ntv-91-4J2" secondAttribute="trailing" id="3HZ-kg-4O7"/>
+                <constraint firstItem="OkO-Au-C3a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CVp-bH-n4V"/>
+                <constraint firstItem="fXH-mI-egB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="HNm-kC-Sul"/>
+                <constraint firstItem="ntv-91-4J2" firstAttribute="top" secondItem="OkO-Au-C3a" secondAttribute="bottom" constant="10" id="Lb6-ob-wXE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fXH-mI-egB" secondAttribute="trailing" id="MPM-4p-nPk"/>
+                <constraint firstItem="3h4-bi-Orb" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="MPk-3U-Xam"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3h4-bi-Orb" secondAttribute="bottom" constant="12" id="VJb-ZO-lTe"/>
+                <constraint firstItem="fXH-mI-egB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YCs-pm-CdS"/>
+                <constraint firstItem="ntv-91-4J2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aGa-yM-7ty"/>
+                <constraint firstItem="3h4-bi-Orb" firstAttribute="top" secondItem="ntv-91-4J2" secondAttribute="bottom" constant="8" id="j7J-u0-9l2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OkO-Au-C3a" secondAttribute="trailing" id="ukz-Rm-vLk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="examAnswer" destination="3h4-bi-Orb" id="CsT-2t-l9g"/>
+                <outlet property="examDescription" destination="fXH-mI-egB" id="DYz-fX-x1u"/>
+                <outlet property="examImage" destination="OkO-Au-C3a" id="e1T-sT-MZY"/>
+                <outlet property="examQuestion" destination="ntv-91-4J2" id="AdD-ch-46u"/>
+            </connections>
+            <point key="canvasLocation" x="117" y="9"/>
+        </view>
+    </objects>
+</document>
