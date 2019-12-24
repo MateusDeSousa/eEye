@@ -7,8 +7,8 @@ class News {
     var title : String
     var content : String
     
-    init(thumbnail : UIImage, title: String, content : String) {
-        self.thumbnail = thumbnail
+    init(thumbnail : UIImage?, title: String, content : String) {
+        self.thumbnail = thumbnail ?? UIImage()
         self.title = title
         self.content = content
     }
@@ -16,179 +16,11 @@ class News {
     public class func getNews() -> [News] {
         var news : [News] = []
         
-        news.append(News(thumbnail: UIImage(named: "news-img-1")!, title: "Astigmatismo: Como identificar?", content: """
-Sintomas
-
-O sintoma mais comum do astigmatismo é a visão borrada ou dupla. Se a visão está apenas um pouco afetada, é possível que não tenha nada de errado. Astigmatismo mais significativo pode causar distorções visíveis.
-
-É particularmente importante lembrar que bebês e crianças com problemas de visão podem não perceber o problema. Afinal, elas podem nunca ter visto o mundo em foco. É por isso que é uma boa ideia ter um controle regular da visão das crianças, principalmente se há casos de problemas refrativos na família. É de suma importância fazer o teste do olhinho logo no nascimento do bebê e levar a criança ao oftalmologista no primeiro ano de vida. Neste período, muitas doenças podem ser diagnosticadas e tratadas, sendo algumas com medidas simples como uso de tampão, evitando assim a cegueira.
-
-Aqui estão alguns sintomas de astigmatismo:
-
-Não conseguir ler letras pequenas;
-
-Dificuldade de leitura;
-
-Visão dupla;
-
-Incapacidade de ver de perto e de longe sem apertar os olhos;
-
-Fotofobia (sensibilidade à luz);
-
-Piora da acuidade visual a noite (miopia também causa piora da acuidade visual noturna).
-
-Crianças com astigmatismo podem experimentar:
-
-Dificuldade com foco em palavras e linhas impressas;
-
-Tensão do olho;
-
-Olhos cansados;
-
-Dores de cabeça.
-"""))
+        news.append(News(thumbnail: UIImage(named: "news-img-1"), title: "Astigmatismo: Como identificar?", content: NSLocalizedString("artigmatism-how-identifier", comment: "")))
         
-        news.append(News(thumbnail: UIImage(named: "news-img-2")!, title: "O que é Astigmatismo", content: """
-
-O que é Astigmatismo?
-
-Astigmatismo é uma imperfeição comum, leve e facilmente tratável na curvatura do olho. A maior parte do poder de foco no olho ocorre ao longo da superfície frontal, chamada córnea. A próxima estrutura envolvida na focagem é o cristalino, lente que fica atrás da iris no interior do olho.
-
-A córnea ideal tem uma superfície simetricamente curva, como uma bola de basquete. O astigmatismo é causado por uma córnea ou uma lente que não é simétrica. Como resultado, as pessoas com astigmatismo podem ter visão distorcida ou borrada.
-
-O astigmatismo pode ocorrer em famílias e na maioria dos casos está associado com outros problemas de refração, como miopia ou hipermetropia. Ele também pode aumentar ao longo do tempo devido à idade.
-
-Causas
-
-Seu olho tem duas partes que concentram as imagens, a córnea e o cristalino. Num olho com a forma perfeita, cada um destes elementos de focagem tem uma curvatura lisa, como a superfície de uma esfera.
-
-A córnea ou cristalino com tais curvas de superfície de curvatura refrata toda a luz recebida da mesma maneira e faz uma imagem perfeitamente focada na parte de trás do olho.
-
-No entanto, se sua córnea ou lente não é uniforme e curva, os raios de luz não são refratados corretamente, e a imagem não fica igualmente focada. Isso faz com que a visão parece borrada, dando origem ao astigmatismo.
-
-No astigmatismo, a córnea ou o cristalino tem uma curva mais acentuada para uma direção do que para outra. Você tem astigmatismo corneano, sua córnea tem uma forma distorcida. Você tem astigmatismo lenticular se seu cristalino é distorcido.
-
-O astigmatismo pode ocorrer em combinação com outros erros refrativos. Veja:
-
-Miopia: ocorre quando a córnea é curva demais ou o olho é mais longo do que o normal. Em vez de se focar justamente na retina, a luz é focalizada na frente da retina, resultando em uma aparência embaçada para objetos distantes
-Hipermetropia: ocorre quando a córnea é pouco curva ou seu olho é mais curto do que o normal. O efeito é o oposto da miopia. Quando o olho está em um estado de relaxamento, a luz é focada na parte de trás, fazendo com que objetos próximos fiquem embaçados.
-O astigmatismo pode estar presente desde o nascimento, ou pode se desenvolver após uma lesão ocular, doença ou cirurgia. O astigmatismo não é causado ou agravado pela leitura com pouca luz, sentar muito perto da televisão ou estrabismo. Uma causa importante de astigmatismo é coçar o olho, prática muito comum em clima seco e alta concentração de poeira no ar.
-
-
-
-
-Sintomas de Astigmatismo
-
-O sintoma mais comum do astigmatismo é a visão borrada ou dupla. Se a visão está apenas um pouco afetada, é possível que não tenha nada de errado. Astigmatismo mais significativo pode causar distorções visíveis.
-
-É particularmente importante lembrar que bebês e crianças com problemas de visão podem não perceber o problema. Afinal, elas podem nunca ter visto o mundo em foco. É por isso que é uma boa ideia ter um controle regular da visão das crianças, principalmente se há casos de problemas refrativos na família. É de suma importância fazer o teste do olhinho logo no nascimento do bebê e levar a criança ao oftalomologista no primeiro ano de vida. Neste período, muitas doenças podem ser diagnosticadas e tratadas, sendo algumas com medidas simples como uso de tampão, evitando assim a cegueira.
-
-Aqui estão alguns sintomas de astigmatismo:
-
-
-Não conseguir ler letras pequenas
-Dificuldade de leitura
-Visão dupla
-Incapacidade de ver de perto e de longe sem apertar os olhos
-Fotofobia (sensibilidade à luz)
-Piora da acuidade visual a noite (miopia também causa piora da acuidade visual noturna).
-
-Crianças com astigmatismo podem experimentar:
-Dificuldade com foco em palavras e linhas impressas
-Tensão do olho
-Olhos cansados
-Dores de cabeça.
-Diagnóstico e Exames
-
-Buscando ajuda médica
-
-Se a qualidade da sua visão está atrapalhando suas atividades pessoais ou de trabalho e interfere com a sua capacidade de realizar tarefas cotidianas, consulte um oftalmologista. Um oftalmologista pode determinar se você tem astigmatismo e, em caso afirmativo, em que grau. Ele ou ela pode aconselhá-lo sobre suas opções para corrigir sua visão.
-
-Para adultos saudáveis com mais de 40 anos, é importante ter os olhos examinados a cada dois ou quatro anos até 55 anos de idade. Depois dessa idade, faça uma avaliação a cada três anos, e a cada dois anos após os 65 anos. É recomendado acompanhamento anual, não para avaliar o grau somente, mas para prevenir doenças graves e com potencial de cegueira, como glaucoma.
-
-
-Caso você tenha outros problemas oculares, pode precisar ter seus olhos verificados com mais frequência. Se você está em risco de certas doenças oculares, como o glaucoma, ou está tratando o diabetes, converse com seu médico para entender com que frequência você precisa ter seus olhos examinados.
-
-
-
-Na consulta médica
-
-O médico habilitado a diagnosticar problema de visão como o astigmatismo é o oftalmologista. Estar preparado para a consulta pode facilitar o diagnóstico e otimizar o tempo. Dessa forma, você já pode chegar à consulta com algumas informações:
-
-Uma lista com todos os sintomas e há quanto tempo eles apareceram
-Histórico médico, incluindo outras condições que o paciente tenha e medicamentos ou suplementos que ele tome com regularidade.
-O médico provavelmente fará uma série de perguntas, tais como:
-
-Quando os sintomas começaram?
-Seus sintomas são contínuos ou ocasionais?
-Quão grave são os seus sintomas?
-O que, se alguma coisa, parece melhorar os seus sintomas?
-O que, se alguma coisa, parece piorar os seus sintomas?
-
-
-Também é importante levar suas dúvidas para a consulta por escrito, começando pela mais importante. Isso garante que você conseguirá respostas para todas as perguntas relevantes antes da consulta acabar. Para astigmatismo, algumas perguntas básicas incluem:
-
-O que provavelmente está causando meus sintomas?
-Além de astigmatismo, quais são as outras causas possíveis para os meus sintomas?
-Quais exames eu preciso fazer?
-Minha condição provavelmente é temporária ou crônica?
-Qual é o melhor curso de ação?
-Quais são as alternativas para a abordagem primária que você está sugerindo?
-Eu tenho essas outras condições de saúde. Como posso melhor gerenciá-las juntas?
-Existem restrições que eu preciso seguir?
-Devo consultar um especialista da córnea?
-Há algum material impresso que eu posso levar para casa comigo? Quais sites você recomenda visitar?
-Diagnóstico de Astigmatismo
-O médico pode usar um ou mais desses quatro exames para diagnosticar o astigmatismo e medir sua gravidade:
-
-Exame de visão
-
-Usando um gráfico padronizado, o paciente deve ler quadros de letras, conhecidos como tabela de snellen, que se encontram a partir de 6 metros. Atualmente, os projetores permitem simular esta distância com espaço menores. Se sua visão é 20/20, você pode ver a 20 pés o que um olho normal pode ver a partir de 20 pés. Se sua visão é 20/80, você só pode ver a 20 pés o que um olho normal deve ser capaz de ver a partir de 80 pés de distância.
-
-Exame de refração
-
-Uma máquina chamada foróptero, que contém lentes corretivas, é posicionado na afrente do olho e usado para medir a receita. Às vezes, o médico olha para o reflexo da luz do seu olho através de um dispositivo portátil chamado de retinoscópio e usa lentes de mão para determinar se algum erro de refração está presente. Em seguida, o oftalmologista irá oferecer-lhe diferentes opções de lentes através do foróptero para refinar a correção até que você possa ler o texto claramente. Depois que ambos os olhos são medidos, o médico irá escrever uma receita para óculos ou lentes de contato com base nas lentes corretivas que funcionaram para você.
-
-Ceratometria
-
-Este aparelho mede a curvatura da córnea central. As córneas que não têm astigmatismo apresentam uma curvatura simétrica, enquanto córneas com astigmatismo não tem curvatura uniforme. O ceratômetro determina as curvas mais íngremes e mais planas da córnea, permitindo o diagnóstico. Esse aparelho também é usado para ajustar as lentes de contato e para acompanhar a curvatura da córnea após uma cirurgia ocular.
-
-Topografia da córnea
-
-Esta tecnologia avançada fornece as informações mais detalhadas sobre a forma da córnea. O paciente olha para um alvo visual enquanto o dispositivo recolhe milhares de medições minúsculas. Um computador então constrói um mapa de cores no computador a partir dos dados. Este mapa permite ao médico ver uma imagem abrangente de sua córnea. Tais medições sofisticadas são importantes para o planejamento de cirurgia refrativa, cirurgia de catarata, e, ocasionalmente, para ajustar lentes de contato. A topografia da córnea é importante no diagnóstico de ceratocone, uma das causa de astigmatismo.
-
-Tratamento e Cuidados
-
-Tratamento de Astigmatismo
-
-O objetivo do tratamento de astigmatismo é melhorar a visão do paciente ou operar a córnea desigual. Os tratamentos incluem óculos, lentes de contato gelatinosa tórica e lente rígida, anel intra estromal (anel de ferrara para casos de ceratocone), cirurgia refrativa, e cirurgia de catarata com implante de lente intra-ocular tórica.
-
-Lentes corretivas
-
-Lentes corretivas tratam astigmatismo por contrariar a curvatura desigual da sua córnea. Tipos de lentes corretivas incluem:
-
-Óculos: pode ser feito com lentes especiais que ajudam a compensar a forma irregular de seu olho
-Lentes de contato: como os óculos, as lentes de contato podem corrigir o astigmatismo. Uma variedade de lentes de contato está disponível, incluindo as lentes de contato rígidas, moles, de uso prolongado, descartáveis, gás permeáveis e bifocais.
-
-
-Cirurgia refrativa
-
-Este método de tratamento para astigmatismo corrige o problema, reformulando a superfície do olho. Antes da cirurgia, os médicos vão avaliá-lo e determinar se você é um candidato para a cirurgia refrativa. Métodos incluem:
-
-Cirurgia LASIK: é um procedimento em que um médico faz um corte circular na córnea. O cirurgião levanta a tampa da córnea e, em seguida, utiliza um laser excimer para esculpir a forma da córnea por baixo da aba. Um laser de excímero é diferente de outros lasers pois não produz calor
-Cirurgia PRK: o cirurgião retira a camada de proteção exterior da córnea, e então utilizar um excimer laser para alterar a curvatura da córnea
-Cirurgia LASEK: uma camada muito fina de córnea é dobrada para trás, o que torna o olho menos vulnerável a danos decorrentes de uma lesão. A cirurgia LASEK pode ser uma opção se você tiver uma córnea fina ou se está em alto risco de uma lesão no olho no trabalho ou de praticar esportes
-SMILE, retirada de uma lente moldada dentro da córnea por meio do laser femtosegundo, técnica mais moderna, mas ainda sem resultados em longo prazo.
-Convivendo (prognóstico)
-Complicações possíveis
-O astigmatismo não corrigido em somente um olho pode causar ambliopia (popularmente conhecido como olho preguiçoso). Coçar o olho constantemente e bruscamente pode favorecer o apareciemto ou a evolução do astigmatismo para ceratocone.
-
-Prevenção
-
-Não tem como prevenir o astigmatismo. O ideal é ficar atento aos sintomas e fazer o diagnóstico precocemente, para tratar o problema antes de qualquer complicação. Além disso, evitar coçar o olho pode ajudar a prevenir complicações.
-"""))
+        news.append(News(thumbnail: UIImage(named: "news-img-2"), title: "O que é Astigmatismo", content: NSLocalizedString("what is artigmatism", comment: "")))
         
-        news.append(News(thumbnail: UIImage(named: "news-img-3")!, title: "Astigmatismo: Principais diagnóstico e exames.", content: """
+        news.append(News(thumbnail: UIImage(named: "news-img-3"), title: "Astigmatismo: Principais diagnóstico e exames.", content: """
 Buscando ajuda médica
 
 Se a qualidade da sua visão está atrapalhando suas atividades pessoais ou de trabalho e interfere com a sua capacidade de realizar tarefas cotidianas, consulte um oftalmologista. Um oftalmologista pode determinar se você tem astigmatismo e, em caso afirmativo, em que grau. Ele ou ela pode aconselhá-lo sobre suas opções para corrigir sua visão.
@@ -247,7 +79,7 @@ Topografia da córnea
 Esta tecnologia avançada fornece as informações mais detalhadas sobre a forma da córnea. O paciente olha para um alvo visual enquanto o dispositivo recolhe milhares de medições minúsculas. Um computador então constrói um mapa de cores no computador a partir dos dados. Este mapa permite ao médico ver uma imagem abrangente de sua córnea. Tais medições sofisticadas são importantes para o planejamento de cirurgia refrativa, cirurgia de catarata, e, ocasionalmente, para ajustar lentes de contato. A topografia da córnea é importante no diagnóstico de ceratocone, uma das causa de astigmatismo.
 
 """))
-        news.append(News(thumbnail: UIImage(named: "news-img-4")!, title: "Astigmatismo: Tratamentos e Cuidados", content: """
+        news.append(News(thumbnail: UIImage(named: "news-img-4"), title: "Astigmatismo: Tratamentos e Cuidados", content: """
 Tratamento de Astigmatismo
 
 O objetivo do tratamento de astigmatismo é melhorar a visão do paciente ou operar a córnea desigual. Os tratamentos incluem óculos, lentes de contato gelatinosa tórica e lente rígida, anel intra estromal (anel de ferrara para casos de ceratocone), cirurgia refrativa, e cirurgia de catarata com implante de lente intra-ocular tórica.
@@ -270,7 +102,7 @@ Cirurgia PRK: o cirurgião retira a camada de proteção exterior da córnea, e 
 
 Cirurgia LASEK: uma camada muito fina de córnea é dobrada para trás, o que torna o olho menos vulnerável a danos decorrentes de uma lesão. A cirurgia LASEK pode ser uma opção se você tiver uma córnea fina ou se está em alto risco de uma lesão no olho no trabalho ou de praticar esportes
 """))
-        news.append(News(thumbnail: UIImage(named: "news-img-5")!, title: "Causas do Astigmatismo", content: """
+        news.append(News(thumbnail: UIImage(named: "news-img-5"), title: "Causas do Astigmatismo", content: """
 Seu olho tem duas partes que concentram as imagens, a córnea e o cristalino. Num olho com a forma perfeita, cada um destes elementos de focagem tem uma curvatura lisa, como a superfície de uma esfera.
 
 A córnea ou cristalino com tais curvas de superfície de curvatura refrata toda a luz recebida da mesma maneira e faz uma imagem perfeitamente focada na parte de trás do olho.
@@ -287,7 +119,7 @@ Hipermetropia: ocorre quando a córnea é pouco curva ou seu olho é mais curto 
 
 O astigmatismo pode estar presente desde o nascimento, ou pode se desenvolver após uma lesão ocular, doença ou cirurgia. O astigmatismo não é causado ou agravado pela leitura com pouca luz, sentar muito perto da televisão ou estrabismo. Uma causa importante de astigmatismo é coçar o olho, prática muito comum em clima seco e alta concentração de poeira no ar.
 """))
-        news.append(News(thumbnail: UIImage(named: "news-img-6")!, title: "Causas do Daltonismo", content: """
+        news.append(News(thumbnail: UIImage(named: "news-img-6"), title: "Causas do Daltonismo", content: """
 O daltonismo é um distúrbio genético ligado ao cromossomo X. Neste distúrbio, ocorre um problema com os pigmentos de determinadas cores em células nervosas do olho, chamadas de cones, localizadas na retina. Mesmo que apenas um pigmento esteja faltando, uma pessoa pode apresentar problemas para reconhecer e identificar diversas cores, tonalidades ou brilho.
 
 Fatores de risco
@@ -322,7 +154,7 @@ Envelhecimento
 A capacidade de enxergar, distinguir e reconhecer cores pode se deteriorar lentamente como parte natural do processo de envelhecimento.
 
 """))
-        news.append(News(thumbnail: UIImage(named: "news-img-7")!, title: "Daltonismo: Diagnóstico e Exames", content: """
+        news.append(News(thumbnail: UIImage(named: "news-img-7"), title: "Daltonismo: Diagnóstico e Exames", content: """
 Buscando ajuda médica
 
 O teste rápido de daltonismo pode revelar se você tem a doença ou não. Se você for pai ou mãe e notar que seu filho está confundindo as cores ou está com dificuldade para distinguir algumas, principalmente vermelho e verde, procure um especialista para que sejam feitos os testes necessários.
@@ -367,7 +199,7 @@ Eletrorretinografia
 
 A eletrorretinografia é o exame que avalia a função da retina por meio de eletrodos que captam a atividade elétrica em resposta a estímulos luminosos. Essa pode ser uma opção para o diagnóstico de daltonismo.
 """))
-        news.append(News(thumbnail: UIImage(named: "news-img-8")!, title: "O que é Daltonismo?", content: """
+        news.append(News(thumbnail: UIImage(named: "news-img-8"), title: "O que é Daltonismo?", content: """
 O daltonismo é um tipo de deficiência visual em que o indivíduo não é capaz de reconhecer e diferenciar algumas cores específicas. O distúrbio recebeu este nome em homenagem ao químico inglês John Dalton, que foi o primeiro estudar as características do daltonismo.
 
 Tipos
@@ -478,7 +310,7 @@ Eletrorretinografia
 
 A eletrorretinografia é o exame que avalia a função da retina por meio de eletrodos que captam a atividade elétrica em resposta a estímulos luminosos. Essa pode ser uma opção para o diagnóstico de daltonismo.
 """))
-        news.append(News(thumbnail: UIImage(named: "news-img-9")!, title: "Sintomas de Daltonismo", content: """
+        news.append(News(thumbnail: UIImage(named: "news-img-9"), title: "Sintomas de Daltonismo", content: """
 Os sinais e sintomas de daltonismo costumam variar de intensidade conforme a pessoa e de acordo com o tipo do distúrbio. Em geral, os sinais mais comuns podem incluir:
 
 Dificuldade para enxergar cores e suas diferentes tonalidades e brilhos de maneira normal;
@@ -489,7 +321,7 @@ Muitas vezes, os sintomas podem ser tão leves que algumas pessoas podem nem per
 
 
 """))
-        news.append(News(thumbnail: UIImage(named: "news-img-10")!, title: "O que é metamorfopsia?", content: """
+        news.append(News(thumbnail: UIImage(named: "news-img-10"), title: "O que é metamorfopsia?", content: """
 Metamorfopsia é a visão distorcida dos objetos, isto é, as imagens podem aparecer menores, maiores, inclinadas, mais próximas ou mais distantes. Uma ilusão visual que distorce as imagens.
 
 É importante, em caso de ver distorção de imagens, que o paciente procure um oftalmologista para exame pois pode estar relacionado com alterações na retina, com degeneração macular relacionada a idade (DMRI), edemas maculares, e outras alterações vireo-retinianas.
