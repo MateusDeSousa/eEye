@@ -1,0 +1,162 @@
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "1lF-uf-t8s"; */
+"1lF-uf-t8s.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "3. Olhe na tela com o olho direito e fixe o olhar no ponto central."; ObjectID = "2pI-Dx-hBI"; */
+"2pI-Dx-hBI.text" = "3. Olhe na tela com o olho direito e fixe o olhar no ponto central.";
+
+/* Class = "UIViewController"; title = "Exams Controller"; ObjectID = "3ol-Eq-Fse"; */
+"3ol-Eq-Fse.title" = "Exams Controller";
+
+/* Class = "UINavigationItem"; title = "Astigmatismo"; ObjectID = "6cB-fs-j9Q"; */
+"6cB-fs-j9Q.title" = "Astigmatismo";
+
+/* Class = "UIButton"; normalTitle = "ASTIGMATISMO"; ObjectID = "74p-NF-VYV"; */
+"74p-NF-VYV.normalTitle" = "ASTIGMATISMO";
+
+/* Class = "UINavigationItem"; title = "Metamorfopsia"; ObjectID = "9Xx-ZC-bqn"; */
+"9Xx-ZC-bqn.title" = "Metamorfopsia";
+
+/* Class = "UITabBarItem"; title = "Resultados"; ObjectID = "AF2-NK-MfW"; */
+"AF2-NK-MfW.title" = "Resultados";
+
+/* Class = "UIViewController"; title = "Exam Astigmatismo"; ObjectID = "BFI-yw-29D"; */
+"BFI-yw-29D.title" = "Exam Astigmatismo";
+
+/* Class = "UIButton"; normalTitle = "DALTONISMO"; ObjectID = "CbM-dv-uRe"; */
+"CbM-dv-uRe.normalTitle" = "DALTONISMO";
+
+/* Class = "UILabel"; text = "Astigmatismo"; ObjectID = "E1a-63-SHa"; */
+"E1a-63-SHa.text" = "Astigmatismo";
+
+/* Class = "UILabel"; text = "Todos os quadrados estão perfeitos?"; ObjectID = "E9l-8Y-jU5"; */
+"E9l-8Y-jU5.text" = "Todos os quadrados estão perfeitos?";
+
+/* Class = "UIViewController"; title = "News Details"; ObjectID = "EUr-EU-Gxo"; */
+"EUr-EU-Gxo.title" = "News Details";
+
+/* Class = "UISegmentedControl"; GNV-1l-tmr.segmentTitles[0] = "Não"; ObjectID = "GNV-1l-tmr"; */
+"GNV-1l-tmr.segmentTitles[0]" = "Não";
+
+/* Class = "UISegmentedControl"; GNV-1l-tmr.segmentTitles[1] = "Sim"; ObjectID = "GNV-1l-tmr"; */
+"GNV-1l-tmr.segmentTitles[1]" = "Sim";
+
+/* Class = "UIButton"; normalTitle = "⟨"; ObjectID = "HIy-wM-qXU"; */
+"HIy-wM-qXU.normalTitle" = "⟨";
+
+/* Class = "UIButton"; normalTitle = "Começar exame"; ObjectID = "I4f-mW-yI5"; */
+"I4f-mW-yI5.normalTitle" = "Começar exame";
+
+/* Class = "UILabel"; text = "Daltonismo"; ObjectID = "IEa-jc-71d"; */
+"IEa-jc-71d.text" = "Daltonismo";
+
+/* Class = "UIBarButtonItem"; title = "Voltar"; ObjectID = "N6m-9F-ZfA"; */
+"N6m-9F-ZfA.title" = "Voltar";
+
+/* Class = "UILabel"; text = "Existe outro ponto escuro alem do central?"; ObjectID = "OQI-dq-d5f"; */
+"OQI-dq-d5f.text" = "Existe outro ponto escuro alem do central?";
+
+/* Class = "UITextField"; placeholder = "Resposta Imagem 2"; ObjectID = "P3W-sz-iA2"; */
+"P3W-sz-iA2.placeholder" = "Resposta Imagem 2";
+
+/* Class = "UIViewController"; title = "Exam Daltonismo"; ObjectID = "QEC-6h-OKY"; */
+"QEC-6h-OKY.title" = "Exam Daltonismo";
+
+/* Class = "UIButton"; normalTitle = "METAMORFOPSIA"; ObjectID = "SY8-Lx-RlZ"; */
+"SY8-Lx-RlZ.normalTitle" = "METAMORFOPSIA";
+
+/* Class = "UITextField"; placeholder = "Resposta Imagem 1"; ObjectID = "U9q-oM-ad2"; */
+"U9q-oM-ad2.placeholder" = "Resposta Imagem 1";
+
+/* Class = "UIViewController"; title = "Results Controller"; ObjectID = "UWh-lE-fKh"; */
+"UWh-lE-fKh.title" = "Results Controller";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Uu9-bb-irh"; */
+"Uu9-bb-irh.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIViewController"; title = "Exam Metamorfopsia"; ObjectID = "VtX-3d-kew"; */
+"VtX-3d-kew.title" = "Exam Metamorfopsia";
+
+/* Class = "UITabBarItem"; title = "Not[icias"; ObjectID = "Vw5-xe-ICO"; */
+"Vw5-xe-ICO.title" = "Not[icias";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "YGu-dq-cJW"; */
+"YGu-dq-cJW.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UISegmentedControl"; YcV-ea-4Da.segmentTitles[0] = "Não"; ObjectID = "YcV-ea-4Da"; */
+"YcV-ea-4Da.segmentTitles[0]" = "Não";
+
+/* Class = "UISegmentedControl"; YcV-ea-4Da.segmentTitles[1] = "Sim"; ObjectID = "YcV-ea-4Da"; */
+"YcV-ea-4Da.segmentTitles[1]" = "Sim";
+
+/* Class = "UIViewController"; title = "Exam Metamorfopsia Instructiona"; ObjectID = "Z6g-ci-VQs"; */
+"Z6g-ci-VQs.title" = "Exam Metamorfopsia Instructiona";
+
+/* Class = "UILabel"; text = "Tem mais de 40 anos?"; ObjectID = "agI-Fq-uWh"; */
+"agI-Fq-uWh.text" = "Tem mais de 40 anos?";
+
+/* Class = "UILabel"; text = "Metamorfopsia"; ObjectID = "buW-sh-zC1"; */
+"buW-sh-zC1.text" = "Metamorfopsia";
+
+/* Class = "UITextField"; placeholder = "Resposta Imagem 3"; ObjectID = "c5q-dU-VgT"; */
+"c5q-dU-VgT.placeholder" = "Resposta Imagem 3";
+
+/* Class = "UINavigationItem"; title = "Daltonismo"; ObjectID = "eFy-64-HH3"; */
+"eFy-64-HH3.title" = "Daltonismo";
+
+/* Class = "UITextView"; text = "Qualquer teste disponibilizado neste aplicativo substitui um exame direto com o seu oftalmologista! \nAntes de começar leia as instruções..."; ObjectID = "eYH-Ib-UEo"; */
+"eYH-Ib-UEo.text" = "Qualquer teste disponibilizado neste aplicativo substitui um exame direto com o seu oftalmologista! \nAntes de começar leia as instruções...";
+
+/* Class = "UILabel"; text = "2. Feche o olho esquerdo com a palma da mão."; ObjectID = "gKn-26-Cah"; */
+"gKn-26-Cah.text" = "2. Feche o olho esquerdo com a palma da mão.";
+
+/* Class = "UILabel"; text = "News Title"; ObjectID = "hau-jL-g9w"; */
+"hau-jL-g9w.text" = "News Title";
+
+/* Class = "UILabel"; text = "Agora que está por dentro de como funicona vamos começar!!!"; ObjectID = "iMh-Qq-73b"; */
+"iMh-Qq-73b.text" = "Agora que está por dentro de como funicona vamos começar!!!";
+
+/* Class = "UISegmentedControl"; iQi-dE-hlk.segmentTitles[0] = "Não"; ObjectID = "iQi-dE-hlk"; */
+"iQi-dE-hlk.segmentTitles[0]" = "Não";
+
+/* Class = "UISegmentedControl"; iQi-dE-hlk.segmentTitles[1] = "Sim"; ObjectID = "iQi-dE-hlk"; */
+"iQi-dE-hlk.segmentTitles[1]" = "Sim";
+
+/* Class = "UITextField"; placeholder = "Resposta Imagem 4"; ObjectID = "jKp-WS-gGk"; */
+"jKp-WS-gGk.placeholder" = "Resposta Imagem 4";
+
+/* Class = "UILabel"; text = "1. Coloque os óculos para perto, caso use."; ObjectID = "kHH-RB-Cd7"; */
+"kHH-RB-Cd7.text" = "1. Coloque os óculos para perto, caso use.";
+
+/* Class = "UISegmentedControl"; kWC-1Y-DOV.segmentTitles[0] = "Não"; ObjectID = "kWC-1Y-DOV"; */
+"kWC-1Y-DOV.segmentTitles[0]" = "Não";
+
+/* Class = "UISegmentedControl"; kWC-1Y-DOV.segmentTitles[1] = "Sim"; ObjectID = "kWC-1Y-DOV"; */
+"kWC-1Y-DOV.segmentTitles[1]" = "Sim";
+
+/* Class = "UILabel"; text = "4. Repita o teste tampando o olho direito e mantendo o esquerdo aberto. "; ObjectID = "th5-NV-xGL"; */
+"th5-NV-xGL.text" = "4. Repita o teste tampando o olho direito e mantendo o esquerdo aberto. ";
+
+/* Class = "UIViewController"; title = "News Controller"; ObjectID = "uyY-a8-DRG"; */
+"uyY-a8-DRG.title" = "News Controller";
+
+/* Class = "UIButton"; normalTitle = "⟩"; ObjectID = "wgk-AS-kLG"; */
+"wgk-AS-kLG.normalTitle" = "⟩";
+
+/* Class = "UILabel"; text = "Em algum momento notou alguma movimentação nas linhas?"; ObjectID = "x9E-5T-XZo"; */
+"x9E-5T-XZo.text" = "Em algum momento notou alguma movimentação nas linhas?";
+
+/* Class = "UITabBarItem"; title = "Exames"; ObjectID = "xmT-zK-eYp"; */
+"xmT-zK-eYp.title" = "Exames";
+
+/* Class = "UITextView"; text = "Example News Content..."; ObjectID = "y7R-3j-VWp"; */
+"y7R-3j-VWp.text" = "Example News Content...";
+
+/* Class = "UITextField"; placeholder = "Resposta Imagem 5"; ObjectID = "yWD-9m-Toa"; */
+"yWD-9m-Toa.placeholder" = "Resposta Imagem 5";
+
+/* Class = "UINavigationItem"; title = "Instruções"; ObjectID = "zUv-KR-jhq"; */
+"zUv-KR-jhq.title" = "Instruções";
+
+/* Class = "UINavigationItem"; title = "Example News Title"; ObjectID = "zlK-5D-YdC"; */
+"zlK-5D-YdC.title" = "Example News Title";
