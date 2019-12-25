@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85744B9023B396B600E3348C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85744B9223B396B600E3348C /* Localizable.strings */; };
+		85744B9423B3985600E3348C /* AppBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85744B9323B3985600E3348C /* AppBarViewController.swift */; };
 		F220095E21C8165B00D81978 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220095D21C8165B00D81978 /* FileHelper.swift */; };
 		F220096021C8169500D81978 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220095F21C8169500D81978 /* NewsTableViewCell.swift */; };
 		F220096221C816B500D81978 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220096121C816B500D81978 /* Exam.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		85744B9123B396B600E3348C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		85744B9323B3985600E3348C /* AppBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarViewController.swift; sourceTree = "<group>"; };
 		F220095D21C8165B00D81978 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		F220095F21C8169500D81978 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		F220096121C816B500D81978 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				F291DAEF21C2CFA300BA23B6 /* Assets.xcassets */,
 				F291DAF121C2CFA300BA23B6 /* LaunchScreen.storyboard */,
 				F291DAF421C2CFA300BA23B6 /* Info.plist */,
+				85744B9323B3985600E3348C /* AppBarViewController.swift */,
 			);
 			path = eEye;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				F291DAE721C2CFA200BA23B6 /* AppDelegate.swift in Sources */,
 				F220096C21C817AC00D81978 /* ExamDaltonismoViewController.swift in Sources */,
 				F220095E21C8165B00D81978 /* FileHelper.swift in Sources */,
+				85744B9423B3985600E3348C /* AppBarViewController.swift in Sources */,
 				F220096621C8174600D81978 /* NewsViewController.swift in Sources */,
 				F220097021C817E500D81978 /* ExamMetamorfopsiaViewController.swift in Sources */,
 				F220096421C8170400D81978 /* News.swift in Sources */,
