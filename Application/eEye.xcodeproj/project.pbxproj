@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854DEDB6240F45D400461051 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DEDB5240F45D400461051 /* NewsView.swift */; };
+		854DEDB8240F4C6600461051 /* NewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DEDB7240F4C6600461051 /* NewCell.swift */; };
 		85744B9023B396B600E3348C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85744B9223B396B600E3348C /* Localizable.strings */; };
 		85744B9423B3985600E3348C /* AppBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85744B9323B3985600E3348C /* AppBarViewController.swift */; };
 		F220095E21C8165B00D81978 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220095D21C8165B00D81978 /* FileHelper.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		854DEDB5240F45D400461051 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		854DEDB7240F4C6600461051 /* NewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCell.swift; sourceTree = "<group>"; };
 		85744B9123B396B600E3348C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		85744B9323B3985600E3348C /* AppBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarViewController.swift; sourceTree = "<group>"; };
 		F220095D21C8165B00D81978 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
@@ -67,6 +71,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		854DEDB9240F554600461051 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F220095921C8160A00D81978 /* util */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				F220097621C8361C00D81978 /* AstigmatismoView.xib */,
+				854DEDB5240F45D400461051 /* NewsView.swift */,
+				854DEDB7240F4C6600461051 /* NewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 		F291DADA21C2CFA200BA23B6 = {
 			isa = PBXGroup;
 			children = (
+				854DEDB9240F554600461051 /* Extension */,
 				F220095C21C8162600D81978 /* helper */,
 				F220095921C8160A00D81978 /* util */,
 				F220095B21C8161E00D81978 /* model */,
@@ -230,6 +244,7 @@
 				F220097421C833BD00D81978 /* FileNameHelper.swift in Sources */,
 				F220096E21C817C700D81978 /* ExamAstigmatismoViewController.swift in Sources */,
 				F220096A21C8178A00D81978 /* ExamsViewController.swift in Sources */,
+				854DEDB6240F45D400461051 /* NewsView.swift in Sources */,
 				F220097921C83B5A00D81978 /* AstigmatismoView.swift in Sources */,
 				F220096821C8176E00D81978 /* NewsDetailsViewController.swift in Sources */,
 				F291DAE721C2CFA200BA23B6 /* AppDelegate.swift in Sources */,
@@ -240,6 +255,7 @@
 				F220097021C817E500D81978 /* ExamMetamorfopsiaViewController.swift in Sources */,
 				F220096421C8170400D81978 /* News.swift in Sources */,
 				F220096021C8169500D81978 /* NewsTableViewCell.swift in Sources */,
+				854DEDB8240F4C6600461051 /* NewCell.swift in Sources */,
 				F220097221C817FC00D81978 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
