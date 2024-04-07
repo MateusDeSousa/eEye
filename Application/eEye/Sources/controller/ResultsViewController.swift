@@ -23,18 +23,17 @@ class ResultsViewController: UIViewController {
     }
     
     func getDiagnosis(fileName : String) -> String {
-        var diagnosis = ""
-        
+        var result = ""
+		guard let data = helper.getFile(with: fileName) else {
+			return result
+		}
         do {
-            let newData = helper.getFile(with: fileName)
-            let json = try JSONSerialization.jsonObject(with: newData!, options: .allowFragments)
-            let tempDict = json as! Dictionary<String, Any>
-            diagnosis = tempDict["diagnosis"] as! String
+			let exam = try JSONDecoder().decode(Exam.self, from: data)
+			result = exam.diagnosis
         } catch (let error) {
             print(error.localizedDescription)
         }
-        
-        return diagnosis
+		return result
     }
     
 }

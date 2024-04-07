@@ -13,7 +13,7 @@ class NewsView: UIView {
     let newsTableView: UITableView = {
         let tableView = UITableView()
         tableView.estimatedRowHeight = 100
-        tableView.rowHeight = UITableViewAutomaticDimension
+		tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView

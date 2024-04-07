@@ -19,7 +19,7 @@ class ExamAstigmatismoViewController: UIViewController,UIScrollViewDelegate {
         
         pageControlAstigmatismo.numberOfPages = slides.count
         pageControlAstigmatismo.currentPage = 0
-        view.bringSubview(toFront: pageControlAstigmatismo)
+		view.bringSubviewToFront(pageControlAstigmatismo)
         
         
     }
