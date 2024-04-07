@@ -1,5 +1,7 @@
 .DS_Store
+*.DS_Store
 AppWorkspace.xcworkspace/xcuserdata
 Application/eEye.xcodeproj/xcuserdata
 Pods/
 Podfile.lock
+DerivedData/

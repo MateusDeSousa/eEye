@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854D15CC2BC2FD4800A62624 /* TabBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854D15CB2BC2FD4700A62624 /* TabBarItemModel.swift */; };
 		854DEDB6240F45D400461051 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DEDB5240F45D400461051 /* NewsView.swift */; };
 		854DEDB8240F4C6600461051 /* NewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DEDB7240F4C6600461051 /* NewCell.swift */; };
 		85744B9023B396B600E3348C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85744B9223B396B600E3348C /* Localizable.strings */; };
-		85744B9423B3985600E3348C /* AppBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85744B9323B3985600E3348C /* AppBarViewController.swift */; };
+		85744B9423B3985600E3348C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85744B9323B3985600E3348C /* TabBarViewController.swift */; };
 		F220095E21C8165B00D81978 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220095D21C8165B00D81978 /* FileHelper.swift */; };
 		F220096021C8169500D81978 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220095F21C8169500D81978 /* NewsTableViewCell.swift */; };
 		F220096221C816B500D81978 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220096121C816B500D81978 /* Exam.swift */; };
@@ -33,10 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		854D15CB2BC2FD4700A62624 /* TabBarItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemModel.swift; sourceTree = "<group>"; };
 		854DEDB5240F45D400461051 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		854DEDB7240F4C6600461051 /* NewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCell.swift; sourceTree = "<group>"; };
 		85744B9123B396B600E3348C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		85744B9323B3985600E3348C /* AppBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarViewController.swift; sourceTree = "<group>"; };
+		85744B9323B3985600E3348C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F220095D21C8165B00D81978 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		F220095F21C8169500D81978 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		F220096121C816B500D81978 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
@@ -71,11 +73,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		854DEDB9240F554600461051 /* Extension */ = {
+		854D15C82BC2F7E000A62624 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				85744B9223B396B600E3348C /* Localizable.strings */,
+				F291DAEC21C2CFA200BA23B6 /* Main.storyboard */,
+				F291DAEF21C2CFA300BA23B6 /* Assets.xcassets */,
+				F291DAF121C2CFA300BA23B6 /* LaunchScreen.storyboard */,
 			);
-			path = Extension;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		854D15C92BC2F7E800A62624 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F220095C21C8162600D81978 /* helper */,
+				F220095921C8160A00D81978 /* util */,
+				F220095B21C8161E00D81978 /* model */,
+				F220097521C835D800D81978 /* view */,
+				F220095A21C8161300D81978 /* controller */,
+				F291DAE621C2CFA200BA23B6 /* AppDelegate.swift */,
+				85744B9323B3985600E3348C /* TabBarViewController.swift */,
+				854D15CB2BC2FD4700A62624 /* TabBarItemModel.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		854D15CA2BC2F7EF00A62624 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				F291DAF421C2CFA300BA23B6 /* Info.plist */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		F220095921C8160A00D81978 /* util */ = {
@@ -83,7 +112,6 @@
 			children = (
 				F220095F21C8169500D81978 /* NewsTableViewCell.swift */,
 				F220097821C83B5A00D81978 /* AstigmatismoView.swift */,
-				85744B9223B396B600E3348C /* Localizable.strings */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -134,12 +162,6 @@
 		F291DADA21C2CFA200BA23B6 = {
 			isa = PBXGroup;
 			children = (
-				854DEDB9240F554600461051 /* Extension */,
-				F220095C21C8162600D81978 /* helper */,
-				F220095921C8160A00D81978 /* util */,
-				F220095B21C8161E00D81978 /* model */,
-				F220097521C835D800D81978 /* view */,
-				F220095A21C8161300D81978 /* controller */,
 				F291DAE521C2CFA200BA23B6 /* eEye */,
 				F291DAE421C2CFA200BA23B6 /* Products */,
 			);
@@ -156,12 +178,9 @@
 		F291DAE521C2CFA200BA23B6 /* eEye */ = {
 			isa = PBXGroup;
 			children = (
-				F291DAE621C2CFA200BA23B6 /* AppDelegate.swift */,
-				F291DAEC21C2CFA200BA23B6 /* Main.storyboard */,
-				F291DAEF21C2CFA300BA23B6 /* Assets.xcassets */,
-				F291DAF121C2CFA300BA23B6 /* LaunchScreen.storyboard */,
-				F291DAF421C2CFA300BA23B6 /* Info.plist */,
-				85744B9323B3985600E3348C /* AppBarViewController.swift */,
+				854D15CA2BC2F7EF00A62624 /* Configs */,
+				854D15C92BC2F7E800A62624 /* Sources */,
+				854D15C82BC2F7E000A62624 /* Resources */,
 			);
 			path = eEye;
 			sourceTree = "<group>";
@@ -198,6 +217,7 @@
 				TargetAttributes = {
 					F291DAE221C2CFA200BA23B6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -247,10 +267,11 @@
 				854DEDB6240F45D400461051 /* NewsView.swift in Sources */,
 				F220097921C83B5A00D81978 /* AstigmatismoView.swift in Sources */,
 				F220096821C8176E00D81978 /* NewsDetailsViewController.swift in Sources */,
+				854D15CC2BC2FD4800A62624 /* TabBarItemModel.swift in Sources */,
 				F291DAE721C2CFA200BA23B6 /* AppDelegate.swift in Sources */,
 				F220096C21C817AC00D81978 /* ExamDaltonismoViewController.swift in Sources */,
 				F220095E21C8165B00D81978 /* FileHelper.swift in Sources */,
-				85744B9423B3985600E3348C /* AppBarViewController.swift in Sources */,
+				85744B9423B3985600E3348C /* TabBarViewController.swift in Sources */,
 				F220096621C8174600D81978 /* NewsViewController.swift in Sources */,
 				F220097021C817E500D81978 /* ExamMetamorfopsiaViewController.swift in Sources */,
 				F220096421C8170400D81978 /* News.swift in Sources */,
@@ -412,7 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
-				INFOPLIST_FILE = eEye/Info.plist;
+				INFOPLIST_FILE = eEye/Configs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,7 +442,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateusdesousa.eeyes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -432,7 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
-				INFOPLIST_FILE = eEye/Info.plist;
+				INFOPLIST_FILE = eEye/Configs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,7 +462,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateusdesousa.eeyes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
