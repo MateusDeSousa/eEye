@@ -10,10 +10,13 @@ final class TabBarViewController: UITabBarController {
     }
     
 	private func makeTabBarItems() {
+		let examsViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ExamsViewController")
+		let resultsViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ResultsViewController")
+		
 		let items: [TabBarItemModel] = [
 			.init(title: "News", icon: UIImage(named: "news"), controller: NewsViewController()),
-			.init(title: "Exams", icon: UIImage(named: "exams"), controller: UIViewController()),
-			.init(title: "Resultados", icon: UIImage(named: "results"), controller: UIViewController())
+			.init(title: "Exams", icon: UIImage(named: "exams"), controller: examsViewController),
+			.init(title: "Resultados", icon: UIImage(named: "results"), controller: resultsViewController)
 		]
 		viewControllers = items.compactMap { self.createController(item: $0) }
 	}
@@ -22,11 +25,19 @@ final class TabBarViewController: UITabBarController {
 		let navController = UINavigationController(rootViewController: item.controller)
 		navController.tabBarItem.title = item.title
 		navController.tabBarItem.image = item.icon
-		navController.navigationBar.barTintColor = colorTabBar
-		navController.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
+		setStyleNavigationBar(navController)
 		item.controller.title = item.title
 		return navController
     }
+	
+	private func setStyleNavigationBar(_ navController: UINavigationController) {
+		let navBarAppearence = UINavigationBarAppearance()
+		navBarAppearence.configureWithOpaqueBackground()
+		navBarAppearence.backgroundColor = colorTabBar
+		navBarAppearence.titleTextAttributes = [.foregroundColor : UIColor.white]
+		navController.navigationBar.standardAppearance = navBarAppearence
+		navController.navigationBar.scrollEdgeAppearance = navBarAppearence
+	}
     
     private func setStyleTabBar(){
         tabBar.barTintColor = colorTabBar

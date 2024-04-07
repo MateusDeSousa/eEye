@@ -1,6 +1,6 @@
 import UIKit
 
-class ExamsViewController: UINavigationController {
+class ExamsViewController: UIViewController {
     
     let BTN_DALTONISMO = "btnDaltonismo"
     let BTN_ASTIGMATISMO = "btnAstigmatismo"

@@ -1,23 +1,17 @@
 import UIKit
 
-class NewsViewController: UIViewController {
-    
-    var tableView: UITableView?
-    var news : [News] = []
-    
-    override func loadView() {
-        super.loadView()
-        let newView = NewsView()
-        tableView = newView.newsTableView
-        view = newView
-    }
+class NewsViewController: UITableViewController {
+	private lazy var newItems: [News] = News.getNews()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        news = News.getNews()
-        tableView?.register(NewCell.self, forCellReuseIdentifier: NewCell.identifier)
-        tableView?.delegate = self
-        tableView?.dataSource = self
+		tableView.estimatedRowHeight = 100
+		tableView.rowHeight = UITableView.automaticDimension
+		tableView.separatorStyle = .none
+		tableView.backgroundColor = UIColor(named: "homeColor")
+        tableView.register(NewCell.self, forCellReuseIdentifier: NewCell.identifier)
+		
+		
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,25 +21,21 @@ class NewsViewController: UIViewController {
 //        }
 //    }
     
-}
-
-extension NewsViewController : UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.news.count
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.newItems.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewCell") as! NewCell
         
-        cell.thumbnail.image = news[indexPath.row].thumbnail
-        cell.title.text = news[indexPath.row].title
+        cell.thumbnail.image = newItems[indexPath.row].thumbnail
+        cell.title.text = newItems[indexPath.row].title
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedNews = News(thumbnail: news[indexPath.row].thumbnail, title: news[indexPath.row].title, content: news[indexPath.row].content)
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedNews = News(thumbnail: newItems[indexPath.row].thumbnail, title: newItems[indexPath.row].title, content: newItems[indexPath.row].content)
         
         performSegue(withIdentifier: "newsDetailsSegue", sender: selectedNews)
     }
